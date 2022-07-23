@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Script printing "Best School" to standard output 10 times using while loop but displays "bad luck" pn the 4th iteration and "good luck" on the 8th
+
+i=0
+while [ $i -lt 10 ]
+do
+	if [ $i -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( i++ ))
+done
